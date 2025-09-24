@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no seu proprio servidor</p>
+
+    <!--<video src="midia/renderh.ogv" width="500" controls></video>-->
+
+    <video width="560" poster="midia/2.png" controls>
+        <source src="midia/renderh.m4v" type="video/mp4">
+        <source src="midia/renderh.ogv" type="video/ogg">
+        <source src="midia/Renderh.webm" type="video/webm">
+        <source src="midia/Renderh.mp4" type="video/mp4">
+        <p>seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=UwzI7rTvEaOIMlJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

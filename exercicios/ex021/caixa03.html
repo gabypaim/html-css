@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+         @font-face {
+            font-family: 'Queen';
+            src: url(Reikna.ttf) format('truetype');
+        }
+        h1 {
+            border: 30px solid transparent;
+            padding: 10px;
+            border-image-source: url('bordadecorada.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+            text-align: center;
+
+            /*shorthand = border-image: url('bordadecorada.png') 27 repeat;*/
+
+            font-family: 'Queen';
+            font-size: 4em;
+            color: rgb(242, 212, 248);
+            width: 300px;
+            margin: auto;
+            background-color: rgb(125, 111, 131);
+        }
+    </style>
+</head>
+<body>
+    <h1>Borda Decorada</h1>
+</body>
+</html>

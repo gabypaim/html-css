@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+
+        */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a {
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(95, 43, 240)
+        }
+
+        a:hover {
+            color: rgb(224, 66, 255);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(255, 239, 187);
+        }
+        
+
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(143, 94, 255);
+        }
+        .especial {
+            background-color: rgb(245, 194, 236);
+            color: white;
+        }
+        .especial::before { 
+            content: '♱';
+        }
+        .especial::after { 
+            content: '♱';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki" target="_blank" rel="external">Elden Ring Wiki</a></li>
+        <li><a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank" rel="external" class="especial">Stardew Valley Wiki</a></li>
+        <li><a href="https://dontstarve.fandom.com/wiki/Don%27t_Starve_Wiki" target="_blank" rel="external">Don't Starve Together Wiki</a></li>
+    </ul>
+</body>
+</html>
