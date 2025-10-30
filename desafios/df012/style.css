@@ -67,7 +67,7 @@ section > p {
 }
 .imagem {
     background-color: darkgray;
-    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.543);;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);;
 }
 .imagem > p {
     background-color: rgba(0, 0, 0, 0.311);
