@@ -21,20 +21,39 @@ header {
 
     display: flex;
     flex-flow: row wrap;
-    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 header > h1 {
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
+
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 nav {
-    background-color: black;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
 
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
 }
 
 nav > a  {
     color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main { 
